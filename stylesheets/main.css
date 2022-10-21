@@ -7,9 +7,11 @@ p { font-size:22px; font-family: 'Montserrat', sans-serif; letter-spacing:2px; t
 strong { color:#E94057cc } 
 
 mark { background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc); border-radius: 6px; padding: -1px 6px; } 
+i.fa { font-size:50px; padding:25px; height:50px; color:#E94057cc; background-color:#453a3c35; border-radius:5px; } 
 
 button { position:relative; padding:0.85em 0.75em; font-size:2rem; color:#fff; border:none; border:radius 5px; z-index:1; transition:background-image 1s linear; background-image:linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); } 
 button::before { position: absolute; content: ""; top: 0; right: 0; bottom: 0; left: 0; z-index: -1; transition: opacity 0.5s linear; opacity: 0; background-image: linear-gradient(to bottom, hsl(344, 100%, 50%), hsl(31, 100%, 40%) ); } 
+button:hover::before { opacity: 1; } 
 
 /* ----- SITE HEADER ----- */ 
 
@@ -27,7 +29,6 @@ header.site-header { height:100vh; width:100%; padding-top: 20px; background-ima
 
 /* ----- MAIN ----- */ 
 
-section { height:100%; } 
 section header { display:flex; position:relative; width:100%; text-align:center; } 
 section header h2 { width:100%; font-size:8.25rem; opacity:0.1; text-transform:uppercase; color:#6c757d; } 
 section header span.backtext { position: absolute; width:100%; top:50%; font-size:2.25rem; font-weight:700; margin-bottom:0; margin-top:0; } 
@@ -39,5 +40,6 @@ section.about div.content div.contact { max-width:40%; margin-top:40px; padding-
  section.about div.content div.contact ul li { padding-bottom:20px; padding-top:20px; border-bottom: 1px solid rgba(250, 250, 250, 0.12); } 
  section.about div.content div.contact ul li span { font-weight:700; color:#E94057cc; } 
 
-
-button:hover::before { opacity: 1; } 
+section.knowledges { display:flex; flex-flow:column; align-items:center; padding:50px; gap:50px; } 
+  section.knowledges div.content { display: flex; justify-content:center; flex-wrap: wrap; padding:50px; gap:50px; } 
+    section.knowledges div.content div.knowledge { display:flex; margin-bottom:20px; gap:20px; max-width:40%; min-width:400px; align-content:center; } 
