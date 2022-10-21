@@ -1,5 +1,5 @@
 html, body { margin:0; background-image:url(../images/bg.png); color:rgb(221, 221, 221); font-size: 16px; line-height: 1.5rem; max-width: 100%; overflow-x: hidden; } 
-h1, h2 { font-family: 'Oswald', sans-serif; color:rgb(189, 75, 75); } 
+h1, h2, h3 { font-family: 'Oswald', sans-serif; color:rgb(189, 75, 75); } 
 p { font-size:22px; font-family: 'Montserrat', sans-serif; letter-spacing:1px; text-align:justify; } 
 strong { color:rgb(189, 75, 75); } 
 mark { background-color:rgb(189, 75, 75); border-radius: 1em; padding: 0 .5rem; } 
@@ -17,8 +17,10 @@ header.site-header { height:100vh; width:100%; padding-top: 20px; background-ima
     header.site-header div.text { max-width: 300px;}
     header.site-header img.logo { max-width: 600px; }
 /* ----- MAIN -----*/ 
+section.about { height:100vh; }
 section.about header { width:100%; text-align:center; } 
 section.about header h2 { font-size:8.25rem; opacity:0.1; } 
 section.about header span { font-size:2.25rem; } 
 
-mark { background-color:rgb(189, 75, 75); border-radius: 1em; padding: 0 .5rem; } 
+section.about div.content { display:flex; flex-flow:row; margin:auto; justify-content:center;}
+section.about div.content div.about-me-text { max-width: 60%;}
