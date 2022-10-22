@@ -1,5 +1,4 @@
 /* ----- SITE GENERAL ----- */ 
-
 html, body { margin:0; background-image:url(../images/bg.png); color:rgb(221, 221, 221); font-size: 16px; line-height: 1.5rem; max-width: 100%; overflow-x: hidden; } 
 h1, h2, h3 { font-family: 'Oswald', sans-serif; color:#E94057cc; font-size:2.25rem; } 
 h1 { color:azure; } 
@@ -29,7 +28,7 @@ header.site-header { height:100vh; width:100%; padding-top: 20px; background-ima
 
 /* ----- MAIN ----- */ 
 
-section header { display:flex; position:relative; width:100%; text-align:center; } 
+section header { display:flex; position:relative; margin-bottom:50px; width:100%; text-align:center; } 
 section header h2 { width:100%; font-size:8.25rem; opacity:0.1; text-transform:uppercase; color:#6c757d; } 
 section header span.backtext { position: absolute; width:100%; top:50%; font-size:2.25rem; font-weight:700; margin-bottom:0; margin-top:0; } 
 
@@ -41,5 +40,19 @@ section.about div.content div.contact { max-width:40%; margin-top:40px; padding-
  section.about div.content div.contact ul li span { font-weight:700; color:#E94057cc; } 
 
 section.knowledges { display:flex; flex-flow:column; align-items:center; padding:50px; gap:50px; } 
-  section.knowledges div.content { display: flex; justify-content:center; flex-wrap: wrap; padding:50px; gap:50px; } 
+  section.knowledges div.content { display: flex; justify-content:center; flex-wrap: wrap; gap:50px; } 
     section.knowledges div.content div.knowledge { display:flex; margin-bottom:20px; gap:20px; max-width:40%; min-width:400px; align-content:center; } 
+
+section.portfolio article { border-bottom:5px black solid; min-height:500px; max-height:700px; height:600px; background-size:cover; background-position: center; }
+  section.portfolio article div { overflow:hidden; height:100%; max-width:50%; padding:0 50px; text-align:left; background-color: rgba(33, 33, 33, 0.600);  }
+  section.portfolio article div h3 { padding-top:50px; }
+  section.portfolio article div p { padding-bottom:50px; }
+
+  section.portfolio article.left div { margin-left:auto; }
+  section.portfolio article.right div { margin-right:auto; }
+  
+section.portfolio article.whakoom {  background-image:url(../images/whakoom.jpg); }
+section.portfolio article.cazadoresdedemonios {  background-image:url(../images/cazadoresdedemonios.jpg); }
+section.portfolio article.mafia {  background-image:url(../images/mafia.jpeg); }
+section.portfolio article.nexus {  background-image:url(../images/nexus.jpg); }
+section.portfolio article.aeternum {  background-image:url(../images/aeternum.jpeg); }
