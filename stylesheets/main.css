@@ -5,6 +5,8 @@ h1 { color:azure; }
 p { font-size:22px; font-family: 'Montserrat', sans-serif; letter-spacing:2px; text-align:justify; } 
 strong { color:#E94057cc } 
 mark { background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc); border-radius: 6px; padding: -1px 6px; } 
+
+/* font awesome icons */
 i.fa { font-size:50px; padding:25px; height:50px; color:#E94057cc; background-color:#453a3c35; border-radius:5px; } 
 
 /* form */
@@ -37,6 +39,7 @@ section header { display:flex; position:relative; margin-bottom:50px; width:100%
 section header h2 { width:100%; font-size:8.25rem; opacity:0.1; text-transform:uppercase; color:#6c757d; } 
 section header span.backtext { position: absolute; width:100%; top:50%; font-size:2.25rem; font-weight:700; margin-bottom:0; margin-top:0; } 
 
+/* about */
 section.about div.content { display:flex; flex-flow:row; margin:auto; justify-content:center; } 
 section.about div.content div.about-me-text { max-width: 60%; } 
 section.about div.content div.contact { max-width:40%; margin-top:40px; padding-left:40px; } 
@@ -44,10 +47,12 @@ section.about div.content div.contact ul { margin-top:20px; padding:0; list-styl
 section.about div.content div.contact ul li { padding-bottom:20px; padding-top:20px; border-bottom: 1px solid rgba(250, 250, 250, 0.12); } 
 section.about div.content div.contact ul li span { font-weight:700; color:#E94057cc; } 
 
+/* knowledges */
 section.knowledges { display:flex; flex-flow:column; align-items:center; padding:50px; gap:50px; } 
 section.knowledges div.content { display: flex; justify-content:center; flex-wrap: wrap; gap:50px; } 
 section.knowledges div.content div.knowledge { display:flex; margin-bottom:20px; gap:20px; max-width:40%; min-width:400px; align-content:center; } 
 
+/* portfolio */
 section.portfolio article { border-bottom:5px black solid; min-height:500px; max-height:700px; height:600px; background-size:cover; background-position: center; } 
 section.portfolio article div { overflow:hidden; height:100%; max-width:50%; padding:0 50px; text-align:left; background-color: rgba(33, 33, 33, 0.8); } 
 section.portfolio article div h3 { padding-top:50px; } 
@@ -62,6 +67,7 @@ section.portfolio article.mafia { background-image:url(../images/mafia.jpeg); }
 section.portfolio article.nexus { background-image:url(../images/nexus.jpg); } 
 section.portfolio article.aeternum { background-image:url(../images/aeternum.jpeg); } 
 
+/* contact */
 section.contact div.content { display:flex; justify-content:center; } 
  section.contact div.content figure { text-align:center; height:50%;} 
   section.contact div.content figure img { height:50%; } 
