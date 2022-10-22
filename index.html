@@ -3,10 +3,12 @@
         <meta charset="utf-8" />
         <title>Kash | Óscar Martín</title>
         <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
-        <script src="js/site.jindex.htmls"></script> 
-        <link href="stylesheets/main.css" rel="stylesheet" />
-        <link href="stylesheets/fontawesome.min" rel="stylesheet" />
+        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link href="stylesheets/main.css" rel="stylesheet" />
+        <script src="js/site.js"></script> 
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +16,11 @@
     </head>
     <body>
         <header class="site-header">
-            <div class="text">
+            <div class="text" data-aos="slide-right" data-aos-duration="800">
                 <h1>Óscar Martín (Kash)</h1>
                 <p class="backtext">Soy desarrollador .NET, director de eventos de ocio alternativo y worldbuilder</p>
             </div>
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo.png" class="logo" data-aos="fade" data-aos-delay="100" data-aos-duration="2000">
             <nav class="site-navbar" role="navigation">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -30,12 +32,12 @@
             </nav>
         </header>
         <main>
-            <section class="about">
-                <header>
+            <section class="about" >
+                <header data-aos="fade-up" data-aos-duration="1500">
                     <h2>Sobre mi</h2>
                     <span class="backtext">Conóceme un poco más ^^</span>
                 </header>
-                <div class="content">
+                <div class="content" data-aos="fade-up" data-aos-duration="1500">
                     <div class="about-me-text">
                         <h3>Soy <span class="highlighted">Óscar Martín (Kash)</span>, desarrollador .NET y creador de eventos de ocio</h3>
                         <p>Bueno, antes que nada <mark>¡Encantado de conocerte!</mark> Esta es mi página web, donde os enseñaré un poco más acerca de mí, mis trabajos, mis hobbies y mi vida en general. Cuando empecé a crearla (cuando escribo esto) me di cuenta de que no es fácil poner un título a "lo que soy". Mucha gente pondrá una profesión en concreto, pero yo... ¡No puedo quedarme solo con una! </p>
@@ -43,7 +45,7 @@
                         <p>Además de ser desarrollador profesional de software, otra de mis pasiones es la narrativa y el desarrollo de mundos (o worldbuilding), lo cual me lleva a empezar a escribir novelas de fantasía, convertirme en actor y hasta llegar a ser guionista y <mark>director de eventos de ocio alternativo</mark>, donde puedo expresar mi creatividad y ofrecer a la gente una actividad divertida y memorable. ¡Pero aún hay más! También soy músico y he tocado en varios grupos a lo largo de más de 10 años, dando conciertos con un buen número de asistentes, siendo partícipe en varios discos y disfrutando cada noche sobre el escenario.</p>
                         <p>Como ves no paro quieto: <mark>Me gusta vivir todos los aspectos de la vida</mark> y profundizar siempre que puedo en cada uno de ellos. </p>
                     </div>
-                    <div class="contact">
+                    <div class="contact" data-aos="fade-up">
                         <ul>
                             <li><span>Email:</span> hola@kash.site</li>
                             <li><span>Edad:</span> 28</li>
@@ -55,33 +57,33 @@
                 </div>
             </section>
             <section class="knowledges">
-            <header>
+            <header data-aos="fade-up" data-aos-duration="1500">
                 <h2>Conocimientos</h2>
                 <span class="backtext">Lo que se me da bien ;)</span>
             </header>
             <div class="content">
-                <div class="knowledge">
+                <div class="knowledge" data-aos="fade-up">
                     <i class="fa fa-hashtag"></i>
                     <div class="text">
                         <h3>Desarrollo .NET</h3>
                         <p>Desde que descubrí que con .NET se puede hacer de todo me encanta esta plataforma. Programar en c# es muy divertido y me encanta la posibilidad de hacer aplicaciones web o de escritorio de forma sencilla y con la semántica fuertemente tipada de c# (Actualmente uno de mis proyectos está basado en ASP.NET Core 6)</p>
                     </div>
                 </div>
-                <div class="knowledge">
+                <div class="knowledge" data-aos="fade-up">
                     <i class="fa fa-code"></i>
                     <div class="text">
                         <h3>HTML, CSS y JS</h3>
                         <p>Mucha gente subestima lo que puedes lograr solo con HTML y CSS (esta web es un ejemplo de ello), si además le añades JS no hay límites en el frontend</p>
                     </div>
                 </div>
-                <div class="knowledge">
+                <div class="knowledge" data-aos="fade-up">
                     <i class="fa fa-terminal"></i>
                     <div class="text">
                         <h3>Salesforce</h3>
                         <p>Casi 3 años de mi carrera profesional los he dedicado al mundo Salesforce, siendo certificado como <strong>Certified Platform Developer I</strong> en 2019 y <strong>Certified Administrator</strong> en 2020, dedicando la mayor parte del tiempo a la programación con APEX</p>
                     </div>
                 </div>
-                <div class="knowledge">
+                <div class="knowledge" data-aos="fade-up">
                     <i class="fa fa-compress"></i>
                     <div class="text">
                         <h3>Wordpress</h3>
@@ -91,36 +93,36 @@
             </div>
             </section>
             <section class="portfolio">
-                <header>
+                <header data-aos="fade-up" data-aos-duration="1500">
                     <h2>Portfolio</h2>
                     <span class="backtext">Mis proyectos y trabajos  (•◡•) /</span>
                 </header>
                 <div class="content">
-                    <article class="whakoom left">
+                    <article class="whakoom left" data-aos="fade-up-left" data-aos-duration="800">
                         <div>
                             <h3>Whakoom Cómics</h3>
                             <p>Whakoom es la empresa donde trabajo: Un equipo de apasionados por los cómics responsables de la creación de una aplicación que ayuda a los lectores a organizar sus colecciones. Mi principal colaboración es ayudar a mantener, desarrollar y mejorar esta aplicación. Como trabajo supone a la vez un reto y una diversión constante ya que el objetivo es hacer cada pequeño desarrollo buscando la calidad y la mejor usabilidad para los usuarios. ¡Y además leo muchos más cómics!</p>
                         </div>
                     </article>
-                    <article class="cazadoresdedemonios right">
+                    <article class="cazadoresdedemonios right" data-aos="fade-up-right" data-aos-duration="800">
                         <div>
                             <h3>Cazadores de Demonios</h3>
                             <p>Este es uno de los proyectos que más ilusión me hace. Cazadores de Demonios es un evento de ocio alternativo, particularmente teatro interactivo o rol en vivo, en el que los jugadores resuelven puzzles, interactúan con actores profesionales, luchan contra demonios y disfrutan de un espectáculo que difícilmente podrán olvidar. Construir la historia y el mundo de Cazadores de Demonios ha sido un reto y sigue siéndolo con cada edición que realizamos del evento.</p>
                         </div>
                     </article>
-                    <article class="mafia left">
+                    <article class="mafia left" data-aos="fade-up-left" data-aos-duration="800">
                         <div>
                             <h3>Mafia: Guerra de familias</h3>
                             <p>Tras adquirir una gran experiencia en eventos de ocio alternativo me he lanzado a sacar mi propio evento. Mafia es un evento de teatro interactivo concebido para ser un espectáculo en el que los jugadores se transladarán al Chicago de los años 30, donde formarán parte de <i>La cosa nostra</i> y tratarán de hacer que su familia mafiosa salga mejor parada que la de sus rivales. Actores, música en directo, coches clásicos y un gran despliegue de dramatismo y acción caracterizan este evento.</p>
                         </div>
                     </article>
-                    <article class="nexus right">
+                    <article class="nexus right" data-aos="fade-up-right" data-aos-duration="800">
                         <div>
                             <h3>Nexus</h3>
                             <p>Desarrollado en ASP.NET 6 y de la mano de un gran amigo y programador, Nexus será el primer videojuego de navegador que haya desarrollado. Nexus es un MMORTS-RPG, lo que básicamente significa que es un juego de estrategia en tiempo real (aunque salgas del juego sigue pasando el tiempo) en linea y multijugador, que además tiene una rica historia. En Nexus los jugadores construyen su imperio en las estrellas y se enfrentan unos a otros de forma frenética en una carrera por el poder.</p>
                         </div>
                     </article>
-                    <article class="aeternum left">
+                    <article class="aeternum left" data-aos="fade-up-left" data-aos-duration="800">
                         <div>
                             <h3>Aeternum</h3>
                             <p>Como comentaba antes también soy músico. Aeternum es mi proyecto musical en ciernes, donde estoy empezando a componer un disco de estilo Metal-Metalcore inspirándome en grupos como Bullet For My Valentine, In Flames o Where The Oceans Falls. </p>
@@ -129,30 +131,32 @@
                 </div>
             </section>
             <section class="contact">
-                <header>
+                <header data-aos="fade-up" data-aos-duration="1500">
                     <h2>Contacto</h2>
                     <span class="backtext">¿Hablamos? ヅ</span>
                 </header>
                 <div class="content">
-                    <form action="">
+                    <form action="" data-aos="slide-right" data-aos-duration="800">
                         <label for="name">¿Quíen eres?</label>
                         <input id="name" type="text" name="name" placeholder="Escribe tu nombre...">
                         <label for="subject">¿Quíen eres?</label>
                         <input id="subject" type="text" name="subject" placeholder="Escribe tu nombre...">
                         <label for="message">¿Qué necesitas?</label>
                         <textarea id="message" name="subject" placeholder="¡Cuéntame todo lo que quieras!" style="height:200px"></textarea>
-
                         <button type="submit" value="Submit">¡Contáctame!</button>
                         </form>
-                    <figure>
+                    <figure data-aos="slide-left" data-aos-duration="800">
                         <img src="images/rune.png">
                     </figure>
                 </div>
             </section>
         </main>
-
         <footer class="site-footer">
             Creado por Óscar Martín 
         </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
   </html>

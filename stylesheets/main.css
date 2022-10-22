@@ -19,7 +19,7 @@ button { position:relative; font-family:"Roboto", sans-serif; text-transform:upp
 
 /* ----- SITE HEADER ----- */ 
 
-nav { position: fixed; width: 100%; top:0; right: 0; left: 0; font-size: 22px; background-color: rgba(0, 0, 0, 0.200); } 
+nav { position: fixed; width: 100%; top:0; right: 0; left: 0; font-size: 22px; background-color: rgba(0, 0, 0, 0.200); z-index:9999; } 
 nav ul { display: flex; padding: 0; gap:20px; justify-content: flex-end; list-style-type: none; } 
 nav ul li { display: inline-block; padding:5px; } 
 nav ul li:last-child { margin-right: 40px; } 
@@ -39,7 +39,7 @@ section header span.backtext { position: absolute; width:100%; top:50%; font-siz
 
 section.about div.content { display:flex; flex-flow:row; margin:auto; justify-content:center; } 
 section.about div.content div.about-me-text { max-width: 60%; } 
-section.about div.content div.contact { max-width:40%; margin-top:40px; padding-left:40px; text-align:center; } 
+section.about div.content div.contact { max-width:40%; margin-top:40px; padding-left:40px; } 
 section.about div.content div.contact ul { margin-top:20px; padding:0; list-style-type:none; font-size:22px; font-family: 'Montserrat', sans-serif; letter-spacing:2px; } 
 section.about div.content div.contact ul li { padding-bottom:20px; padding-top:20px; border-bottom: 1px solid rgba(250, 250, 250, 0.12); } 
 section.about div.content div.contact ul li span { font-weight:700; color:#E94057cc; } 
