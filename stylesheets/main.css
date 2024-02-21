@@ -1,75 +1,23 @@
 /* ----- SITE GENERAL ----- */ 
-html, body { margin:0; background-image:url(../images/bg.png); color:rgb(221, 221, 221); font-size: 16px; line-height: 1.5rem; max-width: 100%; overflow-x: hidden; } 
-h1, h2, h3 { font-family: 'Oswald', sans-serif; color:#E94057cc; font-size:2.25rem; } 
-h1 { color:azure; } 
-p { font-size:22px; font-family: 'Montserrat', sans-serif; letter-spacing:2px; text-align:justify; } 
+html, body { margin:0; background-image:url(../images/bg.png); color:#CAD0DC; line-height: 1.5rem; max-width: 100%; overflow-x: hidden; } 
+h1 { font-family: 'Oswald', sans-serif; color:#E94057cc; font-size:2.25rem; line-height: 120%; } 
+p { font-size:22px; line-height:120%; font-family: 'Montserrat', sans-serif; letter-spacing:2px; text-align:justify; } 
 strong { color:#E94057cc } 
-mark { background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc); border-radius: 6px; padding: -1px 6px; } 
 
-/* font awesome icons */
-i.fa { font-size:50px; padding:25px; height:50px; color:#E94057cc; background-color:#453a3c35; border-radius:5px; } 
+header { margin:auto; height:100vh; width:100vw; padding-top: 20px; background-image:url(../images/mountains.jpg); background-position:center; background-size:cover; box-sizing:border-box;} 
+  header div.text { max-width:80%; background:#252B37cc; margin:auto; padding:20px; border-radius: 20px; } 
 
-/* form */
-form { max-width: 400px; height:100%; padding: 45px; background: #FFFFFF; box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); } 
-form label { color: #6c757d; } 
-form input, form textarea { font-family: "Roboto", sans-serif; outline: 0; background: #f2f2f2; width: 100%; border: 0; margin: 0 0 15px; padding: 15px; box-sizing: border-box; font-size: 14px; } 
 
-/* button */
-button { position:relative; font-family:"Roboto", sans-serif; text-transform:uppercase; outline:0; width:100%; border:0; padding: 15px; color:#FFFFFF; font-size:14px; z-index:1; transition:background-image 1s linear; cursor:pointer; background-image:linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); } 
-  button::before { position: absolute; content: ""; top: 0; right: 0; bottom: 0; left: 0; z-index: -1; transition: opacity 0.5s linear; opacity: 0; background-image:linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); } 
-    button:hover::before { opacity: 1; } 
-
-/* ----- SITE HEADER ----- */ 
-
-nav { position: fixed; width: 100%; top:0; right: 0; left: 0; font-size: 22px; background-color: rgba(0, 0, 0, 0.200); z-index:9999; } 
-nav ul { display: flex; padding: 0; gap:20px; justify-content: flex-end; list-style-type: none; } 
-nav ul li { display: inline-block; padding:5px; } 
-nav ul li:last-child { margin-right: 40px; } 
-nav ul li a { color:azure; text-decoration: none; font-family: 'Oswald', sans-serif; } 
-nav ul li:hover a { color:#ac2f40cc; transition: all 0.3s; } 
-
-header.site-header { height:100vh; width:100%; padding-top: 20px; background-image:url(../images/mountains.jpg); background-position:center; background-size:cover; } 
-header.site-header { display:flex; flex-flow:row; align-items:center; justify-content: center; width:100%; height:100vh; } 
-header.site-header div.text { max-width: 300px; background:linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc); padding:20px; border-radius: 20px; } 
-header.site-header img.logo { max-width: 600px; } 
-
-/* ----- MAIN ----- */ 
-
-section header { display:flex; position:relative; margin-bottom:50px; width:100%; text-align:center; } 
-section header h2 { width:100%; font-size:8.25rem; opacity:0.1; text-transform:uppercase; color:#6c757d; } 
-section header span.backtext { position: absolute; width:100%; top:50%; font-size:2.25rem; font-weight:700; margin-bottom:0; margin-top:0; } 
-
-/* about */
-section.about div.content { display:flex; flex-flow:row; margin:auto; justify-content:center; } 
-section.about div.content div.about-me-text { max-width: 60%; } 
-section.about div.content div.contact { max-width:40%; margin-top:40px; padding-left:40px; } 
-section.about div.content div.contact ul { margin-top:20px; padding:0; list-style-type:none; font-size:22px; font-family: 'Montserrat', sans-serif; letter-spacing:2px; } 
-section.about div.content div.contact ul li { padding-bottom:20px; padding-top:20px; border-bottom: 1px solid rgba(250, 250, 250, 0.12); } 
-section.about div.content div.contact ul li span { font-weight:700; color:#E94057cc; } 
-
-/* knowledges */
-section.knowledges { display:flex; flex-flow:column; align-items:center; padding:50px; gap:50px; } 
-section.knowledges div.content { display: flex; justify-content:center; flex-wrap: wrap; gap:50px; } 
-section.knowledges div.content div.knowledge { display:flex; margin-bottom:20px; gap:20px; max-width:40%; min-width:400px; align-content:center; } 
-
-/* portfolio */
-section.portfolio article { border-bottom:5px black solid; min-height:500px; max-height:700px; height:600px; background-size:cover; background-position: center; } 
-section.portfolio article div { overflow:hidden; height:100%; max-width:50%; padding:0 50px; text-align:left; background-color: rgba(33, 33, 33, 0.8); } 
-section.portfolio article div h3 { padding-top:50px; } 
-section.portfolio article div p { padding-bottom:50px; } 
-
-section.portfolio article.left div { margin-left:auto; } 
-section.portfolio article.right div { margin-right:auto; } 
-
-section.portfolio article.whakoom { background-image:url(../images/whakoom.jpg); } 
-section.portfolio article.cazadoresdedemonios { background-image:url(../images/cazadoresdedemonios.jpg); } 
-section.portfolio article.mafia { background-image:url(../images/mafia.jpeg); } 
-section.portfolio article.nexus { background-image:url(../images/nexus.jpg); } 
-section.portfolio article.aeternum { background-image:url(../images/aeternum.jpeg); } 
-
-/* contact */
-section.contact div.content { display:flex; justify-content:center; } 
- section.contact div.content figure { text-align:center; height:50%;} 
-  section.contact div.content figure img { height:50%; } 
-
+  a {
+    font-weight:bold;
+    box-shadow: inset 0 0 0 0 #E94057cc;
+    color: #E94057cc;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  a:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #E94057cc;
+  }
   
