@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
   "dependencies": {
-    "aos": "^2.3.4"
+  },
+  "devDependencies": {
+    "astro": "^4.9.2"
   }
 }
